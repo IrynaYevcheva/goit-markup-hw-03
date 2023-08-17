@@ -3,15 +3,60 @@ body {
   background-color: #fff;
   color: #434455;
 }
-ul,
-ol {
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* Header */
+
+.header-page {
+  display: flex;
+}
+
+.header-page-container {
+  display: flex;
+  height: 72px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+}
+
+.page-navigation {
+  display: flex;
+}
+
 .header-logo {
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
@@ -21,9 +66,17 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .header-logo .addition {
   color: #2e2f42;
 }
+
+.header-link-list {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
 .header-link {
   color: #2e2f42;
   font-weight: 500;
@@ -35,9 +88,18 @@ a {
   color: #404bbf;
   text-decoration: underline;
 }
+
+.header-link-item {
+}
+
 .contacts {
   font-style: normal;
 }
+
+.header-contact-list {
+  display: flex;
+}
+
 .contacts-link {
   color: #434455;
   line-height: 1.5;
@@ -53,6 +115,8 @@ a {
 /* Section 1 hero image */
 .hero-image {
   background-color: #2e2f42;
+  height: 600px;
+  flex-shrink: 0;
 }
 .hero-image-title {
   color: #ffffff;
@@ -81,21 +145,28 @@ a {
   cursor: pointer;
 }
 
-/* Section 2 Strategy  */
-.qualities {
+/* Section 2 Benefits  */
+.benefits-section {
+}
+.benefits-list {
+}
+.benefits-item {
+}
+
+.benefits-title {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
 }
-.qualities-description {
+.benefits-text {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
 
 /* Section 3 Our Team */
-.our-team-container {
+.our-team-section {
   background-color: #f4f4fd;
 }
 .frame {
