@@ -43,8 +43,8 @@ button {
 }
 
 .section {
-  padding: 120px;
-  padding: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .section-title {
@@ -60,6 +60,7 @@ button {
 /* Header */
 
 .header-page {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-page-container {
@@ -138,6 +139,8 @@ button {
 .hero-image {
   background-color: #2e2f42;
   height: 600px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-image-title {
@@ -150,8 +153,8 @@ button {
   width: 496px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px;
   padding-bottom: 48px;
+  max-width: 496px;
 }
 .hero-image-button {
   font-family: 'Roboto', sans-serif;
@@ -165,7 +168,9 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 188px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 
   gap: 10px;
   border-radius: 4px;
@@ -181,6 +186,7 @@ button {
 }
 
 /* Section 2 Benefits  */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -193,8 +199,7 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.benefits-section {
-}
+
 .benefits-list {
   display: flex;
   gap: 24px;
@@ -209,7 +214,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .benefits-text {
   line-height: 1.5;
@@ -220,10 +225,12 @@ button {
 .our-team-section {
   background-color: #f4f4fd;
 }
+.our-team-title {
+  margin-bottom: 72px;
+}
 .personnel-list {
   display: flex;
   gap: 24px;
-  padding-top: 72px;
 }
 .personnel-list-item {
   background-color: #ffffff;
@@ -236,10 +243,10 @@ button {
 .personnel-list-content {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   justify-content: center;
   align-items: center;
-  padding: 32px 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .personnel-list .names {
@@ -248,10 +255,13 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 .personnel-list .job-title {
   line-height: 1.5;
   letter-spacing: 0.32px;
+  text-align: center;
 }
 
 /* Section 4 Our Portfolio  */
@@ -259,11 +269,15 @@ button {
   margin: auto 156px auto 156px;
 }
 
+.our-portfolio-title {
+  margin-bottom: 72px;
+}
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  padding-top: 72px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .card-portfolio {
@@ -278,7 +292,6 @@ button {
 .card-portfolio-content {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   width: 360px;
   padding: 32px 16px 32px 16px;
   border-right: 1px solid var(--cornflower, #e7e9fc);
@@ -292,6 +305,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 .projects-list .projects-tipes {
   line-height: 1.5;
@@ -301,7 +315,8 @@ button {
 /* Footer */
 .footer-container {
   background-color: #2e2f42;
-  height: 312px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   color: #4d5ae5;
@@ -312,9 +327,8 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: inline-flex;
-  padding-top: 102px;
-  padding-bottom: 18px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logo .addition {
   color: #f4f4fd;
